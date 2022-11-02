@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Using From HTML Form</title>
+<style>
+   body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c1bdb7;
+}
+form {
+    border: 2px solid black;
+    display: inline-block;
+    padding: 30px;
+    background-color: #d4dfe8;
+}
+label{
+    margin: 10px;
+    font-size: 20px;
+}
+#num1 {
+    margin-left: 20px;
+    padding: 7px;
+    margin-bottom: 12px;
+}
+#num2 {
+    margin-left: -2px;
+    padding: 7px;
+}
+button {
+    margin: 30px 0px 12px 33px;
+    padding: 8px;
+    width: 120px;
+    border: 1px solid;
+}
+h2 {
+    font-size: 25px;
+    font-style: italic;
+    margin: 0px 0px 35px 0px;
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+         <h1>Addition & Subtraction</h1>
+    
+
+<form onsubmit="add (); return false " >
+    <h2> User Input From HTML Form</h2>
+<label for="num1">First Number</label>
+<input type="number" id="num1" placeholder="Enter first Number">
+<br>
+<label for="num2">Second Number</label>
+<input type="number" id="num2" placeholder="Enter Second Number">
+<br>
+<button type="submit">Addition</button> 
+<button type="button" onclick="sub()">Subtraction</button>
+<h1 id="result"></h1>
+</form>
+<h1 id="result"></h1>
+<script>
+function add(){
+let number1 =document.querySelector("#num1").value;
+let number2 =document.querySelector("#num2").value;
+
+// to convert from String to number
+number1=Number( number1)              
+number2=Number( number2)
+
+let sum=number1+number2;
+document.querySelector("#result").innerHTML=`The Sum of ${number1} and ${number2} = ${sum}`;
+}
+function sub(){
+let number1 =document.querySelector("#num1").value;
+let number2 =document.querySelector("#num2").value;
+
+// to convert from String to number
+number1=Number( number1)              
+number2=Number( number2)
+
+let sum=number1-number2;
+document.querySelector("#result").innerHTML=`The Subtration of ${number1} and ${number2} = ${sum}`;
+}
+</script>
+</body>
+</html>
