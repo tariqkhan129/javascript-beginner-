@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Marks Sheet</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form onsubmit="markssheet (); return false ">
+        <table>
+            <tr>
+                <td colspan="5">
+                    <h1>Marks Sheet</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1> Subject Name</h1>
+                </td>
+                <td>
+                    <h1> Obtain Marks</h1>
+                </td>
+                <td>
+                    <h1> Total Marks</h1>
+                </td>
+                <td>
+                    <h1> Percentage</h1>
+                </td>
+                <td>
+                    <h1> Grade</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject 1</td>
+                <td><input type="number" id="sub1" placeholder="Enter subject 1 marks"></td>
+                <td><input type="number" id="sub1total" placeholder="Enter subject 1 total marks"></td>
+                <td id="percent1"></td>
+                <td id="grade1"></td>
+            </tr>
+            <tr>
+                <td>Subject 2</td>
+                <td><input type="number" id="sub2" placeholder="Enter subject 2 marks"></td>
+                <td><input type="number" id="sub2total" placeholder="Enter subject 2 total marks"></td>
+                <td id="percent2"></td>
+                <td id="grade2"></td>
+            </tr>
+            <tr>
+                <td>Subject 3</td>
+                <td><input type="number" id="sub3" placeholder="Enter subject 3 marks"></td>
+                <td><input type="number" id="sub3total" placeholder="Enter subject 3 total marks"></td>
+                <td id="percent3"></td>
+                <td id="grade3"></td>
+            </tr>
+            <tr>
+                <td>Subject 4</td>
+                <td><input type="number" id="sub4" placeholder="Enter subject 4 marks"></td>
+                <td><input type="number" id="sub4total" placeholder="Enter subject 4 total marks"></td>
+                <td id="percent4"></td>
+                <td id="grade4"></td>
+            </tr>
+            <tr>
+                <td>Subject 5</td>
+                <td><input type="number" id="sub5" placeholder="Enter subject 5 marks"></td>
+                <td><input type="number" id="sub5total" placeholder="Enter subject 5 total marks"></td>
+                <td id="percent5"></td>
+                <td id="grade5"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h2>Total</h2>
+                <td>
+                    <h2 id="obtainmarks"></h2>
+                </td>
+                <td>
+                    <h2 id="totalmarks"></h2>
+                </td>
+                <td>
+                    <h2 id="percent"></h2>
+                </td>
+                <td>
+                    <h2 id="grade"></h2>
+                </td>
+            </tr>
+           <tr>
+            <td>
+                <h2>Remarks</h2>
+            </td>
+            <td colspan="4">
+               <h2 id="remarks"></h2> 
+            </td>
+           </tr>
+            <tr>
+                <td colspan="5">
+                    <div id="submitbtn">
+                        <button type="submit">Check</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
