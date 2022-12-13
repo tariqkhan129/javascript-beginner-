@@ -17,6 +17,6 @@ function nestedif (){
             }}
      else
      {
-        document.querySelector("#result").innerHTML=` Invalid Email <br>  enter a Valid Email`;
+        document.querySelector("#result").innerHTML=` Invalid Email <br>  Enter a Valid Email`;
      }       
     }
