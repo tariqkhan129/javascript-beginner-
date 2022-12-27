@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+    <h1>Different Types of String Function</h1>
+
+
+    <script>
+
+        let str = "String Function and its tpyes";
+        console.log(str);
+        
+        // will print the index of first occurrence of a string
+        console.log(str.indexOf('and'));
+
+
+        // will print the index of last occurrence of a string
+        console.log(str.lastIndexOf('t'));
+
+
+        // will convert string into Upper case
+        console.log(str.toUpperCase());
+
+        // will convert string into Lower case
+        console.log(str.toLowerCase());
+
+        
+        // will print the string on mention index 
+        console.log(str.charAt(18));
+        // or
+        let ind=str.charAt(18);
+        console.log(ind);
+
+
+        // will print the string from index n to index n-1
+         let ab =str.substring(1 , 8)
+         console.log(ab);
+
+
+        // will print the string from index n to index n-1, also it can print negative values
+        let abc =str.slice(1 , 8)
+        console.log(abc);
+
+
+        // will print the string from index n to index n
+        let abcd =str.substr(1 , 8)
+         console.log(abcd);
+
+
+        // will replace string as car in new variable and the original variables will be same
+           let a="this is a string";
+           console.log(a);
+           let replaced = a.replace( 'string' , 'car' );    
+           console.log(replaced);
+
+
+        //  will concatenate old string with a new string  
+         let b="this is a string";
+           console.log(b);
+           let add = b.concat( ' Not a car' );    
+           console.log(add);
+
+
+           //  will remove white Spaces from start and end of a string  
+           let c="        this      is      a       string      ";
+           console.log(c);
+           let remove = c.trim();  
+           console.log(remove);
+
+
+
+
+    </script>
+</body>
+</html>
